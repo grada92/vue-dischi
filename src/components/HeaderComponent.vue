@@ -1,7 +1,7 @@
 <template>
   <div class="header">
    
-     <h3>ciao</h3>
+     <img src="https://ajourneyintosound.de/wp-content/uploads/2019/02/spotify_logo.png" alt="">
   </div>
 </template>
 
@@ -17,5 +17,7 @@ export default {
     background-color:#2e3a46;
     height: 50px;
    
+} img {
+    width: 40px;
 }
 </style>

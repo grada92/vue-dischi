@@ -1,6 +1,9 @@
 <template>
   <div id="app">
+    
     <HeaderComponent />
+    <div class="loading" v-if="loading">LOADING...</div> <!----BONUS----->
+    <MainComponent :cdList='cdCard' />
     
   </div>
 </template>
@@ -9,16 +12,19 @@
 import axios from 'axios';
 
 import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue';
 
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-  },
+    MainComponent
+},
   data() {
     return {
       cdCard : [],
+      loading: true,
     }
   },
   created() {
@@ -27,7 +33,7 @@ export default {
     .then((response) => {
       console.log(response)
       this.cdCard = response.data.response;
-
+      this.loading = false 
     })
     
     
@@ -50,5 +56,16 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+
+img {
+  width: 100%;
 }
 </style>
