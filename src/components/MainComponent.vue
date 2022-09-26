@@ -6,8 +6,8 @@
                 <img :src="cd.poster" alt="">
             </div>
             <h3>{{ cd.title }}</h3>
-            <p>{{cd.author}}</p>
-            <h5>{{cd.year}}</h5>
+            <h5>{{cd.author}} <h5>{{cd.year}}</h5></h5>
+            
 
 
         </div>
@@ -45,8 +45,12 @@ main {
     width: calc(100% / 5 - 40px);
     margin:20px;
     text-align: center;
-    height: 300px;
-    background-color: hsl(210deg 22% 23%)
+    height: 350px;
+    background-color: hsl(210deg 22% 23%);
+    color: white;
+    align-items: center;
+    padding-top: 15px;
+
 ;
     .box-card {
         width: 150px;
