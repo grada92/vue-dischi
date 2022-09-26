@@ -16,6 +16,7 @@ export default {
 .header {
     background-color:#2e3a46;
     height: 50px;
+    padding: 5px;
    
 } img {
     width: 40px;
