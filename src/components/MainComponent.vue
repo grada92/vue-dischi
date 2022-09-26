@@ -6,7 +6,7 @@
                 <img :src="cd.poster" alt="">
             </div>
             <h5>{{ cd.title }}</h5>
-            <h5>{{cd.author}} <h5>{{cd.year}}</h5></h5>
+            <h6>{{cd.author}} <h6>{{cd.year}}</h6></h6>
             
 
 
@@ -58,6 +58,9 @@ main {
         
         
     }
+}
+h6 {
+    color: rgb(88, 100, 112);
 }
 
 </style>
