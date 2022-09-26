@@ -5,7 +5,7 @@
             <div class="box-card">
                 <img :src="cd.poster" alt="">
             </div>
-            <h3>{{ cd.title }}</h3>
+            <h5>{{ cd.title }}</h5>
             <h5>{{cd.author}} <h5>{{cd.year}}</h5></h5>
             
 
